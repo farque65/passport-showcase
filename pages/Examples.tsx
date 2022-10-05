@@ -31,6 +31,7 @@ const Home: NextPage = () => {
 									description={item.description}
 									repo={item.repo}
 									link={item.link}
+									index={i}
 								/>
 							))}
 						</div>

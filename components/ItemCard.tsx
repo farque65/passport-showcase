@@ -7,6 +7,7 @@ export type ItemCardProps = {
 	description: string;
 	repo: string;
 	link: string;
+	index: number;
 };
 
 export const ItemCard = ({
@@ -15,9 +16,10 @@ export const ItemCard = ({
 	description,
 	repo,
 	link,
+	index,
 }: ItemCardProps): JSX.Element => {
 	return (
-		<div className='w-1/2 p-2 md:w-1/2 xl:w-1/4'>
+		<div className='w-1/2 p-2 md:w-1/2 xl:w-1/4' key={`${name}-${index}`}>
 			<div className='relative border border-gray-200'>
 				<div className='flex flex-row p-6'>
 					<div className='flex h-10 w-1/2 w-10 flex-grow mb-2'>
@@ -29,7 +31,7 @@ export const ItemCard = ({
 									fill='none'
 									stroke='currentColor'
 									stroke-linecap='round'
-									stroke-linejoin='round'
+									strokeLinejoin='round'
 									strokeWidth='2'
 									className='w-10 h-10'
 									viewBox='0 0 24 24'
@@ -63,8 +65,8 @@ export const ItemCard = ({
 							strokeWidth='2'
 						>
 							<path
-								stroke-linecap='round'
-								stroke-linejoin='round'
+								strokeLinecap='round'
+								strokeLinejoin='round'
 								d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
 							/>
 						</svg>
@@ -85,8 +87,8 @@ export const ItemCard = ({
 							strokeWidth='2'
 						>
 							<path
-								stroke-linecap='round'
-								stroke-linejoin='round'
+								strokeLinecap='round'
+								strokeLinejoin='round'
 								d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
 							/>
 						</svg>

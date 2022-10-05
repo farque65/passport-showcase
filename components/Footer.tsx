@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Footer = (): JSX.Element => {
 	return (
-		<div className='inset-x-0 bottom-0'>
+		<div className='fixed inset-x-0 bottom-0'>
 			<div className='relative bg-purple-darkpurple px-4 py-3 pr-14 text-white'>
 				<p className='font-libre-franklin text-left text-sm font-medium ml-10'>
 					🎉 Want to feature your project built with Passport?
