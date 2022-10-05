@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Navbar, Footer } from '../components';
+import { Navbar, Footer, AddToShowCase } from '../components';
 import { devkits } from '../utils/devkits';
 import { projects } from '../utils/projects';
 
@@ -82,6 +82,7 @@ const Home: NextPage = () => {
 					</div>
 				</div>
 			</div>
+			<AddToShowCase />
 			<Footer />
 		</div>
 	);
