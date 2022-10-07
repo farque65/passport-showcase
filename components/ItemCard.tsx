@@ -26,17 +26,11 @@ export const ItemCard = ({
 						{img ? (
 							<img src={img} alt={name} className='h-20 w-20 rounded-full' />
 						) : (
-							<div className='w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-100 text-indigo-500 mb-5 flex-shrink-0'>
-								<svg
-									fill='none'
-									stroke='currentColor'
-									stroke-linecap='round'
-									strokeLinejoin='round'
-									strokeWidth='2'
-									className='w-10 h-10'
-									viewBox='0 0 24 24'
-								></svg>
-							</div>
+							<img
+								src={'/fallback_logo.svg'}
+								alt={name}
+								className='h-20 w-20 rounded-full'
+							/>
 						)}
 					</div>
 				</div>
